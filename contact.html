@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 
-    <link rel="stylesheet" type="style/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    <h1>Hello World!</h1>
+    <h1>Contact Page</h1>
+    <p>Here is the contact page</p>
+    <form class="contact_form" netlify name="contact form" action="success">
+        <div class="contact_input-group">   
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="contact_input-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+
+        <div class="contact_input-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="tel">
+        </div>
+
+        <div class="contact_input-group">
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company">
+        </div>
+
+        <div class="contact_form-message contact_input-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
     <script src="index.js"></script>
 </body>
+
 </html>
