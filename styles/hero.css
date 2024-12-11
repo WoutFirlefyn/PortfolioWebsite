@@ -1,0 +1,43 @@
+    .hero {
+    height: 100vh;
+    background: url('../assets/hero-background.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin: 10px 0 30px;
+    font-weight: normal;
+    color: #bfbfbf;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1rem;
+    color: white;
+    background-color: #4a637f;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-button:hover {
+    background-color: #365069;
+    transform: scale(1.05);
+}

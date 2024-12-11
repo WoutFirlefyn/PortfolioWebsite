@@ -4,6 +4,12 @@
 /*@import url("styles/reset.css");*/
 @import url("styles/project.css");
 
+body {
+    background-color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+}
+
 h1{
     font-size: 48;
     font-weight: bold;
@@ -12,18 +18,16 @@ h1{
 
 h2{
     font-size: 40;
+    color: #98C8ED;
 }
 
 h3{
     font-size: 28;
+    color: #98C8ED;
 }
 
 p{
     color: #d9d9d9;
-}
-
-body {
-    background-color: #1e1e1e;
 }
 
 header {
@@ -38,16 +42,34 @@ footer {
 
 .footer-icons a {
     margin: 0 15px;
-    display: inline-block;
-}
-
-.footer-icons img {
-    width: 40px;
-    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
     transition: transform 0.2s ease;
 }
 
-.footer-icons img:hover {
+.footer-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-icons a:hover {
     transform: scale(1.1);
 }
 
+.about-me_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me_container img {
+    width: 256px;
+    height: 256px;
+}
+
+.about-me_info {
+    display: flex;
+    flex-direction: column;
+}
