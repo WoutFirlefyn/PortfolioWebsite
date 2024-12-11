@@ -1,6 +1,8 @@
 @import url("styles/navigation.css");
 @import url("styles/hero.css");
 @import url("styles/contact.css");
+/*@import url("styles/reset.css");*/
+@import url("styles/project.css");
 
 h1{
     font-size: 48;
@@ -16,6 +18,36 @@ h3{
     font-size: 28;
 }
 
-body {
-    background-color: gray;
+p{
+    color: #d9d9d9;
 }
+
+body {
+    background-color: #1e1e1e;
+}
+
+header {
+    background-color: #121212;
+}
+
+footer {
+    background-color: #121212;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-icons a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.footer-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.1);
+}
+
