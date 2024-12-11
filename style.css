@@ -1,3 +1,21 @@
 @import url("styles/navigation.css");
 @import url("styles/hero.css");
 @import url("styles/contact.css");
+
+h1{
+    font-size: 48;
+    font-weight: bold;
+    color: white;
+}
+
+h2{
+    font-size: 40;
+}
+
+h3{
+    font-size: 28;
+}
+
+body {
+    background-color: gray;
+}
