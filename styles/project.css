@@ -13,8 +13,13 @@
 .project_info{
     display: flex;
     flex-direction: column;
-    margin: 0 2rem;
+    margin-left: 2rem;
     justify-content: space-between;
+}
+
+.project_info.mirrored{
+    margin-right: 2rem;
+    margin-left: 0rem;
 }
 
 .rookie-award{
