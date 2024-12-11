@@ -16,6 +16,7 @@
     font-size: 3rem;
     margin: 0;
     font-weight: bold;
+    font-family: 'Poppins';
 }
 
 .hero h2 {
@@ -23,6 +24,7 @@
     margin: 10px 0 30px;
     font-weight: normal;
     color: #bfbfbf;
+    font-family: 'Poppins';
 }
 
 .hero-button {
