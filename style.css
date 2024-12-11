@@ -39,6 +39,14 @@ p{
 }
 
 header {
+    position: fixed;
+    background-color: transparent;
+    width: 100vw;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+header.moved {
     background-color: #121212;
 }
 

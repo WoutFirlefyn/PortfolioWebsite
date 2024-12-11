@@ -35,3 +35,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     sections.forEach(section => observer.observe(section));
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector('header');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY === 0) {
+            header.classList.remove('moved');
+        } else {
+            header.classList.add('moved');
+        }
+    });
+});
