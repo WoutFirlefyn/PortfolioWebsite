@@ -6,14 +6,13 @@
 }
 
 .project_container img{
-    width: 20%;
-    object-fit: cover;
+    width: 30%;
+    object-fit:contain
 }
 
 .project_info{
     display: flex;
     flex-direction: column;
-    padding: auto;
+    margin-left: 2rem;
     justify-content: space-between;
-    
 }

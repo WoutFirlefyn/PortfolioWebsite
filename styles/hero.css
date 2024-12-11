@@ -1,5 +1,5 @@
-    .hero {
-    height: 100vh;
+.hero {
+    height: 25vh;
     background: url('../assets/hero-background.png') no-repeat center center/cover;
     display: flex;
     justify-content: center;
@@ -8,23 +8,26 @@
     color: white;
 }
 
+.hero.home-page {
+    height: 100vh;
+}
+
 .hero-content {
     max-width: 600px;
 }
 
 .hero h1 {
-    font-size: 3rem;
     margin: 0;
     font-weight: bold;
     font-family: 'Poppins';
 }
 
 .hero h2 {
-    font-size: 1.5rem;
     margin: 10px 0 30px;
     font-weight: normal;
     color: #bfbfbf;
     font-family: 'Poppins';
+    font-size: 28px;
 }
 
 .hero-button {

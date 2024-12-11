@@ -13,23 +13,28 @@ body {
 }
 
 h1{
-    font-size: 48;
+    font-size: 48px;
     font-weight: bold;
     color: white;
+    margin: 0;
 }
 
 h2{
-    font-size: 40;
+    font-size: 40px;
     color: #98C8ED;
+    margin: 0;
 }
 
 h3{
-    font-size: 28;
+    font-size: 28px;
     color: #98C8ED;
+    margin: 0;
 }
 
 p{
+    font-size: 18px;
     color: #d9d9d9;
+    margin: 0;
 }
 
 header {
@@ -39,11 +44,14 @@ header {
 footer {
     background-color: #121212;
     padding: 20px 0;
+}
+
+.link-icons {
     text-align: center;
 }
 
-.footer-icons a {
-    margin: 0 15px;
+.link-icons a {
+    margin: 0 5px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -52,18 +60,19 @@ footer {
     transition: transform 0.2s ease;
 }
 
-.footer-icons img {
+.link-icons a img {
     width: 32px;
     height: 32px;
 }
 
-.footer-icons a:hover {
+.link-icons a:hover {
     transform: scale(1.1);
 }
 
 .about-me_container{
     display: flex;
     flex-direction: row;
+    margin: 100px 10%;
 }
 
 .about-me_container img {
@@ -74,4 +83,6 @@ footer {
 .about-me_info {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2rem;
 }
