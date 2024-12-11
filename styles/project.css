@@ -1,0 +1,19 @@
+.project_container{
+    display: flex;
+    flex-direction: row;
+    margin: 2% 10%;
+    justify-content: space-between;
+}
+
+.project_container img{
+    width: 20%;
+    object-fit: cover;
+}
+
+.project_info{
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+    justify-content: space-between;
+    
+}
