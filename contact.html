@@ -12,9 +12,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <a href="#">Wout Firlefyn</a>
-            </div>
+            <span>Wout Firlefyn</span>
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -32,35 +30,36 @@
             <h1>Contact Me</h1>
         </div>
     </section>
-    <p>Here is the contact page</p>
-    <form class="contact_form" netlify name="contact form" action="success">
-        <div class="contact_input-group">   
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
+    <div class="form-wrapper">
+        <form class="contact_form" netlify name="contact form" action="success">
+            <div class="contact_input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
 
-        <div class="contact_input-group">
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" required>
-        </div>
+            <div class="contact_input-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+            </div>
 
-        <div class="contact_input-group">
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="tel">
-        </div>
+            <div class="contact_input-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="tel">
+            </div>
 
-        <div class="contact_input-group">
-            <label for="company">Company:</label>
-            <input type="text" id="company" name="company">
-        </div>
+            <div class="contact_input-group">
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company">
+            </div>
 
-        <div class="contact_form-message contact_input-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-        </div>
+            <div class="contact_form-message contact_input-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
 
-        <button type="submit">Submit</button>
-    </form>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
     <script src="index.js"></script>
 </body>
 

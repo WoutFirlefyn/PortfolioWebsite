@@ -1,18 +1,32 @@
 .project_container{
     display: flex;
     flex-direction: row;
-    margin: 2% 10%;
+    margin: 2.5rem 15%;
     justify-content: space-between;
 }
 
 .project_container img{
-    width: 30%;
+    height: 15rem;
     object-fit:contain
 }
 
 .project_info{
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
+    margin: 0 2rem;
     justify-content: space-between;
+}
+
+.rookie-award{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.rookie-award img{
+    width: 100px;
+    height: 100px;
+    object-fit:contain
 }

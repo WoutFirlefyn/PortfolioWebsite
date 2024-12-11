@@ -1,11 +1,13 @@
 .hero {
     height: 25vh;
+    width: 100vw;
+    
     background: url('../assets/hero-background.png') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    scale: 1.01;
 }
 
 .hero.home-page {
@@ -25,7 +27,7 @@
 .hero h2 {
     margin: 10px 0 30px;
     font-weight: normal;
-    color: #bfbfbf;
+    color: white;
     font-family: 'Poppins';
     font-size: 28px;
 }
