@@ -3,6 +3,7 @@
 @import url("styles/contact.css");
 /*@import url("styles/reset.css");*/
 @import url("styles/project.css");
+@import url("styles/index.css");
 @import url("fonts.css");
 
 body {
@@ -76,22 +77,4 @@ footer {
 
 .link-icons a:hover {
     transform: scale(1.1);
-}
-
-.about-me_container{
-    display: flex;
-    flex-direction: row;
-    margin: 100px 10%;
-}
-
-.about-me_container img {
-    width: 256px;
-    height: 256px;
-}
-
-.about-me_info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 2rem;
 }

@@ -21,9 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
+                entry.target.classList.remove('bottom');
+                entry.target.classList.remove('top');
             } else {
                 entry.target.classList.remove('visible');
-                if (window.innerHeight - entry.target.getBoundingClientRect().bottom < 100) {
+                if (window.innerHeight - entry.target.getBoundingClientRect().bottom < 10) {
                     entry.target.classList.add('bottom');
                 }
                 else {
@@ -31,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }
         });
-    }, { threshold: 0.6 });
+    }, { threshold: 0.5 });
 
     sections.forEach(section => observer.observe(section));
 });

@@ -4,7 +4,7 @@
     flex-direction: row;
     margin: 2.5rem 15%;
     justify-content: space-between;
-    transition: opacity 0.5s ease, transform 0.5s ease;  /*Smooth animation */
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .project_container.top {
@@ -17,11 +17,12 @@
 
 .project_container.visible {
     opacity: 1;
-    transform: translateY(0px);  /*Back to original position */
+    transform: translateY(0px); 
 }
 
 .project_container img{
     height: 15rem;
+    max-width: 20rem;
     object-fit:contain
 }
 
@@ -29,6 +30,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
+    row-gap: 1rem;
     justify-content: space-between;
 }
 
@@ -49,4 +51,43 @@
     width: 100px;
     height: 100px;
     object-fit:contain
+}
+
+@media (max-width: 800px) {
+    .project_container{
+        flex-direction: column;
+        margin: 2.5rem 15%;
+        align-content: center;
+    }
+
+    .project_container.mirrored{
+        flex-direction: column-reverse;
+    }
+
+    .project_container img {
+        width: 80%;
+        height: auto;
+        align-self: center;
+        max-width: 30rem;
+    }
+
+    .project_info{
+        margin: 1rem 0;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .project_info .link-icons{
+        margin-top: 1.5rem;
+    }
+
+    .rookie-award{
+        flex-direction: column;
+    }
+
+    .rookie-award img{
+        margin-top: 1rem;
+        width: 100px;
+        height: 100px;
+    }
 }
