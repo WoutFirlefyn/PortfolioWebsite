@@ -2,6 +2,7 @@ const menuIcon = document.getElementById("menu-icon")
 const navLinks = document.getElementById("nav-links")
 
 const body = document.querySelector("body")
+const header = document.querySelector('header');
 
 menuIcon.addEventListener("click", () => {
     menuIcon.classList.toggle("active")
@@ -39,8 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const header = document.querySelector('header');
-    
     window.addEventListener('scroll', () => {
         if (window.scrollY === 0) {
             header.classList.remove('moved');
