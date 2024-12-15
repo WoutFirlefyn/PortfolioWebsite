@@ -57,7 +57,7 @@
     align-content: start;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .project_container{
         flex-direction: column;
         margin: 2.5rem 15%;
