@@ -4,6 +4,7 @@ const navLinks = document.getElementById("nav-links")
 const body = document.querySelector("body")
 const header = document.querySelector('header');
 
+// Click to open nav menu
 menuIcon.addEventListener("click", () => {
     menuIcon.classList.toggle("active")
     navLinks.classList.toggle("active")
@@ -15,12 +16,25 @@ menuIcon.addEventListener("click", () => {
     }
 })
 
+// Show/Hide header background depending on scroll
 document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('scroll', () => {
         if (window.scrollY === 0) {
             header.classList.remove('moved');
         } else {
             header.classList.add('moved');
+        }
+    });
+});
+
+// Put current page name in bold in the nav
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const currentPath = window.location.pathname.split('/').pop();
+
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
         }
     });
 });
