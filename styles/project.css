@@ -7,6 +7,10 @@
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
+.project_container.mirrored{
+    flex-direction: row-reverse;
+}
+
 .project_container.top {
     transform: translateY(-50px);
 }
@@ -21,8 +25,8 @@
 }
 
 .project_container img{
+    width: 40%;
     height: 15rem;
-    max-width: 20rem;
     object-fit:contain
 }
 
@@ -48,9 +52,9 @@
 }
 
 .rookie-award img{
-    width: 100px;
-    height: 100px;
-    object-fit:contain
+    width: 6vw;
+    object-fit:contain;
+    align-content: start;
 }
 
 @media (max-width: 800px) {
@@ -61,7 +65,7 @@
     }
 
     .project_container.mirrored{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     .project_container img {
@@ -78,7 +82,7 @@
     }
 
     .project_info .link-icons{
-        margin-top: 1rem;
+        margin-top: 0rem;
     }
 
     .rookie-award{
