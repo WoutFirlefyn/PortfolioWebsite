@@ -12,8 +12,8 @@
 .about-me_info {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin-left: 2rem;
+    margin-left: 2.5rem;
+    gap: 1rem;
 }
 
 @media (max-width: 768px) {

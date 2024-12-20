@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 30rem;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .contact_form-message{
@@ -30,7 +30,8 @@
     color: #d9d9d9;
     border: 0;
     border-radius: 0.25rem;
-    padding: 0.5rem;
+    padding: 1rem;
+    font-family: 'Roboto';
 }
 
 .contact_input-group input{   
@@ -38,12 +39,12 @@
     color: #d9d9d9;
     border: 0;
     border-radius: 0.25rem;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .contact_input-group{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: .25rem;
     margin: 1rem;
 }
@@ -71,4 +72,28 @@
 .contact_input-group label{
     font-size: 18px;
     color: #d9d9d9;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    padding: 0.25rem 0;
+}
+
+.contact_input-group input:placeholder-shown + label {
+    opacity: 0;
+    transform: translateY(35%);
+}
+
+.contact_input-group input:not(:placeholder-shown) + label {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.contact_input-group textarea:placeholder-shown + label {
+    opacity: 0;
+    transform: translateY(35%);
+}
+
+.contact_input-group textarea:not(:placeholder-shown) + label {
+    opacity: 1;
+    transform: translateY(0%);
 }
