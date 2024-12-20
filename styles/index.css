@@ -28,6 +28,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .skills_list {
