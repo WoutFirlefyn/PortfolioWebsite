@@ -1,3 +1,8 @@
+.project_container h2{
+    font-size: 28px;
+    color: #98C8ED;
+}
+
 .project_container{
     opacity: 0;
     display: flex;
