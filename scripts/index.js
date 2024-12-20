@@ -1,10 +1,11 @@
 document.querySelector('.hero-button').addEventListener('click', function (event) {
     event.preventDefault();
 
+    const header = document.querySelector('header');
     const target = document.getElementById('about');
-    const offset = 200;
+    const offset = 40;
 
-    const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
+    const targetPosition = target.getBoundingClientRect().top - header.offsetHeight + window.scrollY - offset ;
 
     window.scrollTo({
         top: targetPosition,

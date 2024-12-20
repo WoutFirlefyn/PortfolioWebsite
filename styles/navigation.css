@@ -44,6 +44,10 @@ nav ul {
     position: relative;
 }
 
+.nav-links a b {
+    font-weight: bold;
+}
+
 .nav-links::after{
     content: "";
     position: absolute;

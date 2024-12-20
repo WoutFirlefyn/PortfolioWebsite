@@ -26,15 +26,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
-// Put current page name in bold in the nav
-document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('.nav-links a');
-    const currentPath = window.location.pathname.split('/').pop();
-
-    navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPath) {
-            link.classList.add('active');
-        }
-    });
-});
